@@ -89,7 +89,7 @@ function validarNombrePropietario() {
 
 function validarMotivoConsulta() {
   const motivoConsulta = motivoConsultaInput.value;
-  return /^[a-zA-Z\s]*$/.test(motivoConsulta); // Devuelve true si solo contiene letras y espacios
+  return !/\d/.test(motivoConsulta); // Devuelve true si solo contiene letras y espacios
 }
 
 
